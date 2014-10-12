@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
     <title>Sitruc</title>
@@ -10,509 +9,497 @@
     <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
     <link type="text/css" rel="stylesheet" href="css/calendrier.css" />
     <link rel="stylesheet" type="text/css" href="css/stylehover.css" />
-    		<link rel="stylesheet" type="text/css" href="css/component.css" />
-
-
-
-
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
 <!--    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" type="text/javascript"></script>
-    <![endif]-->
-    
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="calendrier.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    		<script src="js/modernizr.custom2.js"></script>
+        <![endif]-->    
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="calendrier.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/modernizr.custom2.js"></script>    
+    </head>
 
-    
-    
-    
-    
-    
-</head>
+    <body>	
+        <div class="wrapper">
 
-<body>	
-    <div class="wrapper">
-    
-	<!----------------------------------MENU---------------------------------->
-	<header>
-	    <div class="rowtrafic">
-	    <div class="row">
-		<div class="trafic">
-		    <p>Infos trafic en live</p>
-		</div>
-	    </div>
-	    </div>
-	    
-            <div class="row">
-		<div class="bandeauheader cl100">
-		    
-		    <div class="logo cl29">
-		    <a href="http://www.sitruc.fr"><img src="Images/logo_sitruc.png" alt="Logo Sitruc"/></a>
-		    </div>
-		    
-		    <div class="inscription cl42">
-		    <button class="btn btn-4 btn-4c icon-arrow-right">Connexion / Inscription</button>
-		    </div>
+          <!----------------------------------MENU---------------------------------->
+          <header>
+              <div class="rowtrafic">
+                  <div class="row">
+                     <div id="trafic">
+                        <p class="quotes">Info trafic : C'est la rentrée !</p>
+                        <p class="quotes">Info trafic : Déviations sur la RN</p>
+                        <p class="quotes">Info trafic : Festival régional</p>
+                        <p class="quotes">Infos trafic en live</p>
+                    </div>
+                    
+                    <div class="row">
+                     <div class="bandeauheader cl100">
+                         
+                         <div class="logo cl29">
+                             <a href="http://www.sitruc.fr"><img src="Images/logo_sitruc.png" alt="Logo Sitruc"/></a>
+                         </div>
+                         
+                         <div class="inscription cl42">
+                             <button class="btn btn-4 btn-4c icon-arrow-right">Connexion / Inscription</button>
+                         </div>
 
-		    <div class="social cl29 tilt">
-		    <a href="http://www.facebook.fr/sitruc"><img src="Images/facebook.png" alt="Facebook Sitruc"/></a>
-		    <a href="http://www.twitter.com/sitruc"><img src="Images/twitter.png" alt="Twitter Sitruc"/></a>
-		    <a href="http://www.googleplus.com/sitruc"><img src="Images/googleplus.png" alt="GooglePlus Sitruc"/></a>
-		    <a href="http://www.youtube.com/sitruc"><img src="Images/youtube.png" alt="YouTube Sitruc"/></a>
-		    </div>
+                         <div class="social cl29 tilt">
+                             <a href="http://www.facebook.fr/sitruc"><img src="Images/facebook.png" alt="Facebook Sitruc"/></a>
+                             <a href="http://www.twitter.com/sitruc"><img src="Images/twitter.png" alt="Twitter Sitruc"/></a>
+                             <a href="http://www.googleplus.com/sitruc"><img src="Images/googleplus.png" alt="GooglePlus Sitruc"/></a>
+                             <a href="http://www.youtube.com/sitruc"><img src="Images/youtube.png" alt="YouTube Sitruc"/></a>
+                         </div>
 
-		</div>
-	    </div>
-	    	    <div class="wrappercenter">
+                     </div>
+                 </div>
+                 <div class="wrappercenter">
 
-	    <div class="row">
-		<nav id="menu">
-		    <div class="cl75">
-			<ul>
-			    <li class="active"><a href="#accueil">Accueil</a></li>
-			    <li><a href="association.html">Actualités</a></li>
-			    <li><a href="activites.html">Se déplacer</a></li>
-			    <li><a href="agenda.html">S'abonner / Acheter</a></li>
-			    <li><a href="adhere.html">Qui sommes-nous ?</a></li>
-			    <li><a href="adhere.html">Contact</a></li>
-			</ul>
-		    </div>
-		    <div class="cl25">
-			<div id="sb-search" class="sb-search">
-			    <form>
-				<input class="sb-search-input" placeholder="Entrez votre recherche..." type="search" value="" name="search" id="search">
-				<input class="sb-search-submit" type="submit" value="">
-				<span class="sb-icon-search"><img src="Images/loupe.png"/></span>
-			    </form>
-			</div>
-		    </div>
-		</nav>
-	    </div>
-	    </div>
-	</header>
-	
-	
-	
-	<!----------------------------------SLIDER---------------------------------->
-	<div class="row">
-	    <div id="accueil">
-		<ul class="rslides" id="slider1">
-		    <li><img src="Images/cuisine.jpg" alt="">Activités culinaires</li>
-		    <li><img src="Images/sport.jpg" alt="">Activités sportives</li>
-		    <li><img src="Images/photographie.jpg" alt="">Initiation et perfectionnement à la photographie</li>
-		    <li><img src="Images/musique.jpg" alt="">Activités musicophiles</li>
-		    <li><img src="Images/oenologie.jpg" alt="">Oenologie</li>
-		</ul>
-	    </div>
-	</div>
-	
-	
-	
-	<!----------------------------------AGENDA---------------------------------->
-	<div class="row">
-	    <div class="agenda">
-		<p>Evènement 1 agenda</p>
-	    </div>
-	</div>
-	
-	
-	
-	<!----------------------------------ITINERAIRES---------------------------------->
-	<div class="row">
-	    <div class="cl66 itineraire">
-		<h2 class="inline-border"><a href="itineraire.html">Mon itinéraire</a></h2>
-		<div class="row">
-		    <div class="cl50 cl50iti">
-			<b>Départ</b><br>
-			<form method='post' action=''>
-			<INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/>
-			
-			<br>
-			<FORM>
-			<SELECT name="depart" size="1">
-			    <OPTION>Départ
-			    <OPTION>Arrivée
-			</SELECT>
-			</FORM>
-			
-			<FORM>
-			<SELECT name="heure" size="1">
-			    <OPTION>00
-			    <OPTION>01
-			    <OPTION>02
-			    <OPTION>03
-			    <OPTION>04
-			    <OPTION>05
-			    <OPTION>06
-			    <OPTION>07
-			    <OPTION>08
-			    <OPTION>09
-			    <OPTION>10
-			    <OPTION>11
-			    <OPTION>12
-			    <OPTION>13
-			    <OPTION>14
-			    <OPTION>15
-			    <OPTION>16
-			    <OPTION>17
-			    <OPTION>18
-			    <OPTION>19
-			    <OPTION>20
-			    <OPTION>21
-			    <OPTION>22
-			    <OPTION>23
-			</SELECT>
-			</FORM>
-			
-			 <FORM>
-			<SELECT name="minute" size="1">
-			    <OPTION>00
-			    <OPTION>05
-			    <OPTION>10
-			    <OPTION>15
-			    <OPTION>20
-			    <OPTION>25
-			    <OPTION>30
-			    <OPTION>35
-			    <OPTION>40
-			    <OPTION>45
-			    <OPTION>50
-			    <OPTION>55
-			</SELECT>
-			</FORM>
-		    
-		    </div>
-		    
-		    <div class="cl50">
-			<b>Arrivée</b><br>
-			<INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/> 
-			<INPUT TYPE='submit' NAME='rechercher' VALUE=' Rechercher '/>
-			<br>
-			
-			 <!-- Tableau obligatoire ! C'est lui qui contiendra le calendrier ! -->
-			<table class="ds_box" cellpadding="0" cellspacing="0" id="ds_conclass" style="display: none;">
-				<tr>
-					<td id="ds_calclass"></td>
-				</tr>
-			</table>
-			<input type="text" name="date1" onclick="ds_sh(this);" />
-			</form>
-		    </div>
-		</div>
-	    </div>
-		
-	    <div class="cl33 lignes tilt">
-		<div class="row">
-		    <h2 class="inline-border"><a href="reseau.html">Réseau</a></h2>
-		    <a href="http://www.facebook.fr/sitruc"><img src="Images/1.png" alt="Facebook Sitruc"/></a>
-		    <a href="http://www.twitter.com/sitruc"><img src="Images/2.png" alt="Twitter Sitruc"/></a>
-		    <a href="http://www.googleplus.com/sitruc"><img src="Images/3.png" alt="GooglePlus Sitruc"/></a>
-		    <a href="http://www.youtube.com/sitruc"><img src="Images/4.png" alt="YouTube Sitruc"/></a>
-		    <a href="http://www.youtube.com/sitruc"><img src="Images/5.png" alt="YouTube Sitruc"/></a><br>
-		</div>
-		<a href="http://www.googleplus.com/sitruc"><img src="Images/plan.png" alt="GooglePlus Sitruc"/></a>
-		<a href="http://www.youtube.com/sitruc"><img src="Images/interactif.png" alt="YouTube Sitruc"/></a>
-	    </div>
-	</div>
-	
-	
-	
-        <!----------------------------------SERVICES---------------------------------->
-	<section id="set2">
-	<h2 class="inline-border"><a href="itineraire.html">Les services</a></h2>
-	<div class="row">
-	    <div class="cl33 servicesimage">
-		<p>Découvrez tous les services Sitruc en ligne.<br> Suivi du traffic et commande en ligne, gérez tout depuis ce panneau.</p>
-		<button class="btn btn-4 btn-4c icon-arrow-right">Tous les services</button>
-	    </div>
-	    
-	    <div class="cl66">
-		<section>
-		    <ul id="da-thumbs" class="da-thumbs">
-    			<li>
-			    <a href="http://dribbble.com/shots/505046-Menu">
-				<img src="images/horaire.png" />
-				<div><span>Consultez les horaires</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/504336-TN-Aquarium">
-				<img src="images/euro.png" />
-				<div><span>Consultez les tarifs</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/504197-Mr-Crabs">
-				<img src="images/boutique.png" />
-				<div><span>Boutique en ligne</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
-				<img src="images/amende.png" />
-				<div><span>Paiment des amendes</span></div>
-		            </a>
-			</li>
-			<li>	
-		    	    <a href="http://dribbble.com/shots/503058-Ice-Cream-nom-nom">
-				<img src="images/alerte.png" />
-				<div><span>Alertes accessibilité</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/502927-My-Muse">
-				<img src="images/contact.png" />
-				<div><span>Contactez-nous!</span></div>
-			    </a>
-			</li>	
-		    </ul>
-		</section>
-	    </div>
-	</div>
-	</section>
-	  
-	    
-	    
-        <!----------------------------------SE DEPLACER---------------------------------->
-	<h2 class="inline-border"><a href="itineraire.html">Se déplacer</a></h2>
-	<div class="row">
-	    <div class="cl66">
-		<section>
-		    <ul id="da-thumbs" class="da-thumbs">
-			<li>
-			    <a href="http://dribbble.com/shots/505046-Menu">
-				<img src="images/pro.png" />
-				<div><span>Transports pour professionnels</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/504336-TN-Aquarium">
-				<img src="images/senior.png" />
-				<div><span>Transports pour séniors</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/504197-Mr-Crabs">
-				<img src="images/evenementiel.png" />
-				<div><span>Transports évènementiels</span></div>
-			    </a>
-			</li>
-			<li>
-			    <a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
-			    	<img src="images/scolaire.png" />
-			    	<div><span>Transports scolaire</span></div>
-			    </a>
-			</li>
-			<li>
-			    <button class="btn btn-4 btn-4c icon-arrow-right">Les transports Sitruc</button>
-			</li>
-		    </ul>
-		</section>
-	    </div>
+                  <div class="row">
+                     <nav id="menu">
+                         <div class="cl75">
+                            <ul>
+                                <li class="active"><a href="#accueil">Accueil</a></li>
+                                <li><a href="association.html">Actualités</a></li>
+                                <li><a href="activites.html">Se déplacer</a></li>
+                                <li><a href="agenda.html">S'abonner / Acheter</a></li>
+                                <li><a href="adhere.html">Qui sommes-nous ?</a></li>
+                                <li><a href="adhere.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="cl25">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                   <input class="sb-search-input" placeholder="Entrez votre recherche..." type="search" value="" name="search" id="search">
+                                   <input class="sb-search-submit" type="submit" value="">
+                                   <span class="sb-icon-search"><img src="Images/loupe.png"/></span>
+                               </form>
+                           </div>
+                       </div>
+                   </nav>
+               </div>
+           </div>
+       </header>
+       
+       
+       
+       <!----------------------------------SLIDER---------------------------------->
+       <div class="row">
+          <div id="accueil">
+             <ul class="rslides" id="slider1">
+                 <li><img src="Images/cuisine.jpg" alt="">Activités culinaires</li>
+                 <li><img src="Images/sport.jpg" alt="">Activités sportives</li>
+                 <li><img src="Images/photographie.jpg" alt="">Initiation et perfectionnement à la photographie</li>
+                 <li><img src="Images/musique.jpg" alt="">Activités musicophiles</li>
+                 <li><img src="Images/oenologie.jpg" alt="">Oenologie</li>
+             </ul>
+         </div>
+     </div>
+     
+     
+     
+     <!----------------------------------AGENDA---------------------------------->
+     <div class="row">
+      <div class="agenda">
+         <p>Evènement 1 agenda</p>
+     </div>
+ </div>
+ 
+ 
+ 
+ <!----------------------------------ITINERAIRES---------------------------------->
+ <div class="row">
+  <div class="cl66 itineraire">
+     <h2 class="inline-border"><a href="itineraire.html">Mon itinéraire</a></h2>
+     <div class="row">
+         <div class="cl50 cl50iti">
+            <b>Départ</b><br>
+            <form method='post' action=''>
+                <INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/>
+                
+                <br>
+                <FORM>
+                    <SELECT name="depart" size="1">
+                        <OPTION>Départ
+                            <OPTION>Arrivée
+                            </SELECT>
+                        </FORM>
+                        
+                        <FORM>
+                            <SELECT name="heure" size="1">
+                                <OPTION>00</OPTION>
+                                <OPTION>01</OPTION>
+                                <OPTION>02</OPTION>
+                                <OPTION>03</OPTION>
+                                <OPTION>04</OPTION>
+                                <OPTION>05</OPTION>
+                                <OPTION>06</OPTION>
+                                <OPTION>07</OPTION>
+                                <OPTION>08</OPTION>
+                                <OPTION>09</OPTION>
+                                <OPTION>10</OPTION>
+                                <OPTION>11</OPTION>
+                                <OPTION>12</OPTION>
+                                <OPTION>13</OPTION>
+                                <OPTION>14</OPTION>
+                                <OPTION>15</OPTION>
+                                <OPTION>16</OPTION>
+                                <OPTION>17</OPTION>
+                                <OPTION>18</OPTION>
+                                <OPTION>19</OPTION>
+                                <OPTION>20</OPTION>
+                                <OPTION>21</OPTION>
+                                <OPTION>22</OPTION>
+                                <OPTION>23</OPTION>
+                            </SELECT>
+                        </FORM>
+                        
+                        <FORM>
+                            <SELECT name="minute" size="1">
+                                <OPTION>00</OPTION>
+                                <OPTION>05</OPTION>
+                                <OPTION>10</OPTION>
+                                <OPTION>15</OPTION>
+                                <OPTION>20</OPTION>
+                                <OPTION>25</OPTION>
+                                <OPTION>30</OPTION>
+                                <OPTION>35</OPTION>
+                                <OPTION>40</OPTION>
+                                <OPTION>45</OPTION>
+                                <OPTION>50</OPTION>
+                                <OPTION>55</OPTION>
+                            </SELECT>
+                        </FORM>
+                        
+                    </div>
+                    
+                    <div class="cl50">
+                        <b>Arrivée</b><br>
+                        <INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/> 
+                        <INPUT TYPE='submit' NAME='rechercher' VALUE=' Rechercher '/>
+                        <br>
+                        
+                        <!-- Tableau obligatoire ! C'est lui qui contiendra le calendrier ! -->
+                        <table class="ds_box" cellpadding="0" cellspacing="0" id="ds_conclass" style="display: none;">
+                           <tr>
+                              <td id="ds_calclass"></td>
+                          </tr>
+                      </table>
+                      <input type="text" name="date1" onclick="ds_sh(this);" />
+                  </form>
+              </div>
+          </div>
+      </div>
+      
+      <div class="cl33 lignes tilt">
+         <div class="row">
+             <h2 class="inline-border"><a href="reseau.html">Réseau</a></h2>
+             <a href="#"><img src="Images/1.png" alt="Facebook Sitruc"/></a>
+             <a href="#"><img src="Images/2.png" alt="Twitter Sitruc"/></a>
+             <a href="#"><img src="Images/3.png" alt="GooglePlus Sitruc"/></a>
+             <a href="#"><img src="Images/4.png" alt="YouTube Sitruc"/></a>
+             <a href="#"><img src="Images/5.png" alt="YouTube Sitruc"/></a><br>
+         </div>
+         <a href="#"><img src="Images/plan.png" alt="GooglePlus Sitruc"/></a>
+         <a href="#"><img src="Images/interactif.png" alt="YouTube Sitruc"/></a>
+     </div>
+ </div>
+ 
+ 
+ 
+ <!----------------------------------SERVICES---------------------------------->
+ <section id="set2">
+  <h2 class="inline-border"><a href="itineraire.html">Les services</a></h2>
+  <div class="row">
+      <div class="cl33 servicesimage">
+         <p>Découvrez tous les services Sitruc en ligne.<br> Suivi du traffic et commande en ligne, gérez tout depuis ce panneau.</p>
+         <button class="btn btn-4 btn-4c icon-arrow-right">Tous les services</button>
+     </div>
+     
+     <div class="cl66">
+         <section>
+             <ul id="da-thumbs" class="da-thumbs">
+                <li>
+                    <a href="http://dribbble.com/shots/505046-Menu">
+                       <img src="images/horaire.png" />
+                       <div><span>Consultez les horaires</span></div>
+                   </a>
+               </li>
+               <li>
+                <a href="http://dribbble.com/shots/504336-TN-Aquarium">
+                   <img src="images/euro.png" />
+                   <div><span>Consultez les tarifs</span></div>
+               </a>
+           </li>
+           <li>
+            <a href="http://dribbble.com/shots/504197-Mr-Crabs">
+               <img src="images/boutique.png" />
+               <div><span>Boutique en ligne</span></div>
+           </a>
+       </li>
+       <li>
+        <a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
+           <img src="images/amende.png" />
+           <div><span>Paiment des amendes</span></div>
+       </a>
+   </li>
+   <li>	
+    <a href="http://dribbble.com/shots/503058-Ice-Cream-nom-nom">
+       <img src="images/alerte.png" />
+       <div><span>Alertes accessibilité</span></div>
+   </a>
+</li>
+<li>
+    <a href="http://dribbble.com/shots/502927-My-Muse">
+       <img src="images/contact.png" />
+       <div><span>Contactez-nous!</span></div>
+   </a>
+</li>	
+</ul>
+</section>
+</div>
+</div>
+</section>
+
+
+
+<!----------------------------------SE DEPLACER---------------------------------->
+<h2 class="inline-border"><a href="itineraire.html">Se déplacer</a></h2>
+<div class="row">
+  <div class="cl66">
+     <section>
+         <ul id="da-thumbs" class="da-thumbs">
+            <li>
+                <a href="http://dribbble.com/shots/505046-Menu">
+                   <img src="images/pro.png" />
+                   <div><span>Transports pour professionnels</span></div>
+               </a>
+           </li>
+           <li>
+            <a href="http://dribbble.com/shots/504336-TN-Aquarium">
+               <img src="images/senior.png" />
+               <div><span>Transports pour séniors</span></div>
+           </a>
+       </li>
+       <li>
+        <a href="http://dribbble.com/shots/504197-Mr-Crabs">
+           <img src="images/evenementiel.png" />
+           <div><span>Transports évènementiels</span></div>
+       </a>
+   </li>
+   <li>
+    <a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
+       <img src="images/scolaire.png" />
+       <div><span>Transports scolaire</span></div>
+   </a>
+</li>
+<li>
+    <button class="btn btn-4 btn-4c icon-arrow-right">Les transports Sitruc</button>
+</li>
+</ul>
+</section>
+</div>
+
+<div class="cl33 servicesimage">
+ <p>Découvrez tous les services Sitruc en ligne.<br> Suivi du traffic et commande en ligne, gérez tout depuis ce panneau.</p>
+</div>
+</div>
+
+
+
+<!----------------------------------NOS ENGAGEMENTS---------------------------------->
+<div class="row">
+  <section id="set2">
+     <h2 class="inline-border"><a href="itineraire.html">Nos engagements</a></h2>
+     
+     
+     engagements
+ </section>
+</div>
+
+
+
+<!----------------------------------FOOTER---------------------------------->
+<footer>
+  <div class="row">
+    <div class="cl25">
+     <h5><a href="actualites.html">Actualités</a></h5>
+     <ul>
+         <li><a href="#" target="_blank">Toute l'actualité</a></li><br>
+         <li><a href="#" target="_blank">Edito</a></li><br>
+         <li><a href="#" target="_blank">Infos traffic</a></li><br>
+     </ul>
+ </div>
+ 
+ <div class="cl25">
+     <h5><a href="se-deplacer.html">Se déplacer</a></h5>
+     <ul>
+         <li><a href="#" target="_blank">Lignes</a></li><br>
+         <li><a href="#" target="_blank">Horaires</a></li><br>
+         <li><a href="#" target="_blank">Le réseau</a></li><br>
+         <li><a href="#" target="_blank">Plan interactif</a></li><br>
+         <li><a href="#" target="_blank">Transport scolaire</a></li><br>
+         <li><a href="#" target="_blank">Transport pro</a></li><br>
+         <li><a href="#" target="_blank">Transport sénrios</a></li><br>
+         <li><a href="#" target="_blank">Transport évènementiel</a></li><br>
+     </ul>
+ </div>
+ 
+ <div class="cl25">
+  <h5><a href="abonner-acheter.html">S'abonner / Acheter</a></h5> 
+  <ul>
+     <li><a href="#" target="_blank">Tarifs</a></li><br>
+     <li><a href="#" target="_blank">Recharger ma carte</a></li><br>
+     <li><a href="#" target="_blank">Demander ma carte</a></li><br>
+     <li><a href="#" target="_blank">Points de vente</a></li><br>
+ </ul>
+</div>
+
+<div class="cl25">
+ <h5><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></h5> 
+ <ul>
+     <li><a href="#" target="_blank">Historique</a></li><br>
+     <li><a href="#" target="_blank">L'équipe</a></li><br>
+     <li><a href="#" target="_blank">Parc véhicules</a></li><br>
+ </ul>
+</div>
+</div>
+
+<div class="row footer2">
+ <div class="cl25">
+   <h5><a href="contact.html">Contact</a></h5>
+   <ul>
+       <li><a href="#" target="_blank">L'équipe</a></li><br>
+       <li><a href="#" target="_blank">Parc véhicules</a></li><br>
+   </ul>
+</div>
+<div class="cl33 clfooter">
+ <div class="newsletter">
+    <b>S'inscrire à la newsletter du site</b>
+    <form method='post' action=''>
+        
+        Email
+        <INPUT type= 'text' placeholder='Votre email' name='mail'/>                        
+        <INPUT TYPE='submit' NAME='envoyer' VALUE=' Inscription '/>
+    </form>
+</div>
+
+<div class="footsocial tilt">
+    <a href="http://www.facebook.fr/sitruc"><img src="Images/facebook.png" alt="Facebook Sitruc"/></a>
+    <a href="http://www.twitter.com/sitruc"><img src="Images/twitter.png" alt="Twitter Sitruc"/></a>
+    <a href="http://www.googleplus.com/sitruc"><img src="Images/googleplus.png" alt="GooglePlus Sitruc"/></a>
+    <a href="http://www.youtube.com/sitruc"><img src="Images/youtube.png" alt="YouTube Sitruc"/></a>
+    <a href="http://www.youtube.com/sitruc"><img src="Images/linkedin.png" alt="LinkedIn Sitruc"/></a>
+    <a href="http://www.youtube.com/sitruc"><img src="Images/viadeo.png" alt="Viadeo Sitruc"/></a>
     
-	    <div class="cl33 servicesimage">
-		<p>Découvrez tous les services Sitruc en ligne.<br> Suivi du traffic et commande en ligne, gérez tout depuis ce panneau.</p>
-	    </div>
-	</div>
-	    
-	    
-	    
-        <!----------------------------------NOS ENGAGEMENTS---------------------------------->
-	<div class="row">
-	    <section id="set2">
-		<h2 class="inline-border"><a href="itineraire.html">Nos engagements</a></h2>
-    
-    
-	    engagements
-	    </section>
-	</div>
-	
-	
-	
-	<!----------------------------------FOOTER---------------------------------->
-	<footer>
-	    <div class="row">
-	      <div class="cl25">
-		<h5><a href="actualites.html">Actualités</a></h5>
-		<ul>
-		    <li><a href="#" target="_blank">Toute l'actualité</a></li><br>
-		    <li><a href="#" target="_blank">Edito</a></li><br>
-		    <li><a href="#" target="_blank">Infos traffic</a></li><br>
-		</ul>
-	      </div>
-	      
-	      <div class="cl25">
-		<h5><a href="se-deplacer.html">Se déplacer</a></h5>
-		<ul>
-		    <li><a href="#" target="_blank">Lignes</a></li><br>
-		    <li><a href="#" target="_blank">Horaires</a></li><br>
-		    <li><a href="#" target="_blank">Le réseau</a></li><br>
-		    <li><a href="#" target="_blank">Plan interactif</a></li><br>
-		    <li><a href="#" target="_blank">Transport scolaire</a></li><br>
-		    <li><a href="#" target="_blank">Transport pro</a></li><br>
-		    <li><a href="#" target="_blank">Transport sénrios</a></li><br>
-		    <li><a href="#" target="_blank">Transport évènementiel</a></li><br>
-		</ul>
-	      </div>
-	      
-	      <div class="cl25">
-	        <h5><a href="abonner-acheter.html">S'abonner / Acheter</a></h5> 
-		<ul>
-		    <li><a href="#" target="_blank">Tarifs</a></li><br>
-		    <li><a href="#" target="_blank">Recharger ma carte</a></li><br>
-		    <li><a href="#" target="_blank">Demander ma carte</a></li><br>
-		    <li><a href="#" target="_blank">Points de vente</a></li><br>
-		</ul>
-	      </div>
-	      
-	      <div class="cl25">
-		<h5><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></h5> 
-		<ul>
-		    <li><a href="#" target="_blank">Historique</a></li><br>
-		    <li><a href="#" target="_blank">L'équipe</a></li><br>
-		    <li><a href="#" target="_blank">Parc véhicules</a></li><br>
-		</ul>
-	      </div>
-	    </div>
-	    
-	    <div class="row footer2">
-		<div class="cl25">
-		  <h5><a href="contact.html">Contact</a></h5>
-		  <ul>
-		      <li><a href="#" target="_blank">L'équipe</a></li><br>
-		      <li><a href="#" target="_blank">Parc véhicules</a></li><br>
-		  </ul>
-		</div>
-		<div class="cl33 clfooter">
-		    <div class="newsletter">
-			<b>S'inscrire à la newsletter du site</b>
-			<form method='post' action=''>
-			
-			Email
-			<INPUT type= 'text' placeholder='Votre email' name='mail'/>                        
-			<INPUT TYPE='submit' NAME='envoyer' VALUE=' Inscription '/>
-			</form>
-		    </div>
-		    
-		    <div class="footsocial tilt">
-			<a href="http://www.facebook.fr/sitruc"><img src="Images/facebook.png" alt="Facebook Sitruc"/></a>
-			<a href="http://www.twitter.com/sitruc"><img src="Images/twitter.png" alt="Twitter Sitruc"/></a>
-			<a href="http://www.googleplus.com/sitruc"><img src="Images/googleplus.png" alt="GooglePlus Sitruc"/></a>
-			<a href="http://www.youtube.com/sitruc"><img src="Images/youtube.png" alt="YouTube Sitruc"/></a>
-			<a href="http://www.youtube.com/sitruc"><img src="Images/linkedin.png" alt="LinkedIn Sitruc"/></a>
-			<a href="http://www.youtube.com/sitruc"><img src="Images/viadeo.png" alt="Viadeo Sitruc"/></a>
-    
-		    </div>
-		</div>
-	    </div>
-	<div class="row footerlast">
-	    <div class="cl33 logofooter">
-		    <a href="http://www.sitruc.fr"><img src="Images/logo_sitruc.png" alt="Logo Sitruc"/></a>
-		    
-		    <div class="meteo">
-			météo	
-			
-		    </div>
-	    </div>
-		
-	    <div class="cl66">
-		<a href="/plan-du-site/">Plan du site</a> | <a href="/mentions-legales/">Mentions Légales</a> | <a href="/cus">Conditions d'utilisation du site</a> | <a href="/cgv/">Conditions générales de vente</a> | <a href="newsletter.html">Désinscription newsletter</a> | <a href="contact.html">Contact</a>
-	    </div>
-	</div>
-	
-	<div class="row">
-	    <div class="cl100 copyright">
-		<br>Copyright © 2014 - Sitruc
-	    </div>
-	</div>
-	</footer>
+</div>
+</div>
+</div>
+<div class="row footerlast">
+  <div class="cl33 logofooter">
+     <a href="http://www.sitruc.fr"><img src="Images/logo_sitruc.png" alt="Logo Sitruc"/></a>
+     
+     <div class="meteo">
+        météo	
+        
     </div>
-    
-    
-    
-    
-    <!---------------------Menu flottant / fixe--------------------->
-    <script type="text/javascript">
-    var positionElementInPage = $('#menu').offset().top; //prend le menu
-    $(window).scroll( // listen for scroll
-                     function() { //gestion du menu avec le scroll :
-                        if ($(window).scrollTop() >= positionElementInPage) {
-                                // fixed
-                                $('#menu').addClass("floatable");
-                            } else {
-                                // relative
-                                $('#menu').removeClass("floatable");
-                            }
-                     }
-                    );
-                            
-    </script>
-    
-    <!---------------------Barre de recherche--------------------->
-    <script src="js/classie.js"></script>
-    <script src="js/uisearch.js"></script>
-    <script>
-	new UISearch( document.getElementById( 'sb-search' ) );
-    </script>
-    
-    <!---------------------Suivi hover--------------------->
-    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
-    <script type="text/javascript">
-    $(function() {
-	$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-    });
-    </script>
-		
-    <!---------------------Effet image--------------------->
-    <script src="js/toucheffects.js"></script>
-    
-    <!---------------------Effet bouton--------------------->
-    <script>
-    var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
-    buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
-    totalButtons7Click = buttons7Click.length,
-    totalButtons9Click = buttons9Click.length;
+</div>
 
-    buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
-    buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+<div class="cl66">
+ <a href="/plan-du-site/">Plan du site</a> | <a href="/mentions-legales/">Mentions Légales</a> | <a href="/cus">Conditions d'utilisation du site</a> | <a href="/cgv/">Conditions générales de vente</a> | <a href="newsletter.html">Désinscription newsletter</a> | <a href="contact.html">Contact</a>
+</div>
+</div>
 
-    function activate() {
-	var self = this, activatedClass = 'btn-activated';
-    
-	if( classie.has( this, 'btn-7h' ) ) {
-	    // if it is the first of the two btn-7h then activatedClass = 'btn-error';
-	    // if it is the second then activatedClass = 'btn-success'
-	    activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
-	}
-	else if( classie.has( this, 'btn-8g' ) ) {
-	    // if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
-	    // if it is the second then activatedClass = 'btn-error3d'
-	    activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
-	}
-    
-	if( !classie.has( this, activatedClass ) ) {
-	    classie.add( this, activatedClass );
-	    setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
-	}
-    }
+<div class="row">
+  <div class="cl100 copyright">
+     <br>Copyright © 2014 - Sitruc
+ </div>
+</div>
+</footer>
+</div>
 
-    document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
-	classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
-    },
-    false );
-    </script>
+<script src="js/info-trafic.js"></script>
 
-    
-    
+
+	    <!---------------------Menu flottant / fixe--------------------->
+	    <script type="text/javascript">
+	    var positionElementInPage = $('#menu').offset().top; //prend le menu
+	    $(window).scroll( // listen for scroll
+	                     function() { //gestion du menu avec le scroll :
+	                        if ($(window).scrollTop() >= positionElementInPage) {
+	                                // fixed
+	                                $('#menu').addClass("floatable");
+	                            } else {
+	                                // relative
+	                                $('#menu').removeClass("floatable");
+	                            }
+	                     }
+	                    );
+	                            
+	    </script>
+	    
+	    <!---------------------Barre de recherche--------------------->
+	    <script src="js/classie.js"></script>
+	    <script src="js/uisearch.js"></script>
+	    <script>
+		new UISearch( document.getElementById( 'sb-search' ) );
+	    </script>
+	    
+	    <!---------------------Suivi hover--------------------->
+	    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+	    <script type="text/javascript">
+	    $(function() {
+		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+	    });
+	    </script>
+			
+	    <!---------------------Effet image--------------------->
+	    <script src="js/toucheffects.js"></script>
+	    
+	    <!---------------------Effet bouton--------------------->
+	    <script>
+	    var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+	    buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+	    totalButtons7Click = buttons7Click.length,
+	    totalButtons9Click = buttons9Click.length;
+
+	    buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+	    buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+	    function activate() {
+		var self = this, activatedClass = 'btn-activated';
+	    
+		if( classie.has( this, 'btn-7h' ) ) {
+		    // if it is the first of the two btn-7h then activatedClass = 'btn-error';
+		    // if it is the second then activatedClass = 'btn-success'
+		    activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
+		}
+		else if( classie.has( this, 'btn-8g' ) ) {
+		    // if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+		    // if it is the second then activatedClass = 'btn-error3d'
+		    activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+		}
+	    
+		if( !classie.has( this, activatedClass ) ) {
+		    classie.add( this, activatedClass );
+		    setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+		}
+	    }
+
+	    document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+		classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+	    },
+	    false );
+	    </script>
+
+	    
+	    
     
 </body>
 </html>
