@@ -1,0 +1,22 @@
+/* for presentation only */
+
+body {
+	font: 16px Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.weather-wrapper {
+	display: inline-block;
+}
+
+.weather-icon {
+	float: left;
+}
+
+strong {
+	color: steelblue;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}

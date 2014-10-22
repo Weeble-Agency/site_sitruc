@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(http://fonts.gstatic.com/s/ptserif/v8/03aPdn7fFF3H6ngCgAlQzBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+.quotes {display: none;}

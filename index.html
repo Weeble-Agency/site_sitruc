@@ -1,505 +1,624 @@
 <!DOCTYPE html>
-<html lang="fr">
+<!--[if IE 8]><html lang="fr-FR" class="no-js is_ie8 lt_ie9 lt_ie10"><![endif]-->
+<!--[if IE 9]><html lang="fr-FR" class="no-js is_ie9 lt_ie10"><![endif]-->
+<!--[if gt IE 9]><html lang="fr-FR" class="no-js is_ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html slick-uniqueid="3" lang="fr-FR"><!--<![endif]-->
 <head>
-    <title>Sitruc</title>
-    <meta name="description" content="Sitruc" />
-    <meta charset="UTF-8" />
-    <link type="text/css" rel="stylesheet" href="css/reset.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
-    <link type="text/css" rel="stylesheet" href="css/calendrier.css" />
-    <link rel="stylesheet" type="text/css" href="css/stylehover.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-<!--    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
--->
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" type="text/javascript"></script>
-        <![endif]-->    
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script type="text/javascript" src="calendrier.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script src="js/modernizr.custom.js"></script>
-        <script src="js/modernizr.custom2.js"></script>    
-    </head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Mika - Transports Sitruc</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>	
-        <div class="wrapper">
+	<link href="images/favicon.ico" rel="shortcut icon">
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="pingback" href="#xmlrpc.php">
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+	<link type="text/css" rel="stylesheet" href="css/bjqs.css" />
+	<link rel="canonical" href="#">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'> -->
+	<!-- <link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/style-weather.css">
 
-          <!----------------------------------MENU---------------------------------->
-          <header>
-              <div class="rowtrafic">
-                  <div class="row">
-                     <div id="trafic">
-                        <p class="quotes">Info trafic : C'est la rentrée !</p>
-                        <p class="quotes">Info trafic : Déviations sur la RN</p>
-                        <p class="quotes">Info trafic : Festival régional</p>
-                        <p class="quotes">Infos trafic en live</p>
+
+	<script src="js/dc.js" async="" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="#wp-content/themes/aveclesaidantsV2/javascripts/html5shiv.min.js"></script>
+      <script src="#wp-content/themes/aveclesaidantsV2/javascripts/respond.min.js"></script>
+      <![endif]-->
+
+      <link rel="stylesheet" id="wp-glossary-css-css" href="css/wp-glossary.css" type="text/css" media="all">
+      <link rel="stylesheet" id="wp-glossary-qtip-css-css" href="css/jquery.css" type="text/css" media="all">
+      <link rel="stylesheet" id="taxonomy-image-plugin-public-css" href="css/style.css" type="text/css" media="screen">
+      <style type="text/css">
+      	#contenu {
+      		font-size : 100%;
+      	}
+      </style>
+      <script>
+      	$(function() {
+      		$( "#datepicker" ).datepicker();
+      	});
+      </script>
+      <!--<script src="js/commonutilstats.js" charset="UTF-8" type="text/javascript"></script>-->
+  </head>
+
+  <body class="tailletxt-1 ">
+
+    <div class="container-fluid top-contact-banner hidden-xs">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="trafic">
+                    <p class="quotes">Info trafic : C'est la rentrée !</p>
+                    <p class="quotes">Info trafic : Déviations sur la RN</p>
+                    <p class="quotes">Info trafic : Festival régional</p>
+                    <p class="quotes">Infos trafic en live</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row" id="top">
+            <div class="col-md-6 col-xs-12 vcenter">
+                <h1 class="logo">
+                    <a class="text-hide" href="#" title="Retourner sur la page d'accueil"><img src="images/logo-sitruc.png" alt="Sitruc" />&nbsp;</a>
+                </h1>
+            </div><!--
+            --><div class="col-md-4 col-xs-6 vcenter hidden-xs hidden-sm">
+                <form id="topsearch" action="#" method="get">
+                    <div>
+                        <input id="tops" name="s" class="s" placeholder="Rechercher une ligne, un arrêt..." type="text">
+                        <input name="submit" class="btn submit text-hide" value="OK" type="submit">
                     </div>
-                    
-                    <div class="row">
-                     <div class="bandeauheader cl100">
-                         
-                         <div class="logo cl29">
-                             <a href="http://www.sitruc.fr"><img src="Images/logo_sitruc.png" alt="Logo Sitruc"/></a>
-                         </div>
-                         
-                         <div class="inscription cl42">
-                             <button class="btn btn-4 btn-4c icon-arrow-right">Connexion / Inscription</button>
-                         </div>
+                </form>
+            </div><!--
+            --><div class="col-md-2 col-xs-6 vcenter hidden-xs hidden-sm">
+                <div id="minicompte">
+                    <a href="#login/">Connexion</a><br>
+                    <a href="#" target="_blank"><img src="images/facebook.jpg" style="padding-top:10px;"/></a>
+                    <a href="#" target="_blank"><img src="images/twitter.jpg" style="padding-top:10px;"/></a>
+                    <a href="#" target="_blank"><img src="images/googleplus.jpg" style="padding-top:10px;"/></a>
+                </div>
+            </div>
+        </div>
 
-                         <div class="social cl29 tilt">
-                             <a href="http://www.facebook.fr/sitruc"><img src="Images/facebook.png" alt="Facebook Sitruc"/></a>
-                             <a href="http://www.twitter.com/sitruc"><img src="Images/twitter.png" alt="Twitter Sitruc"/></a>
-                             <a href="http://www.googleplus.com/sitruc"><img src="Images/googleplus.png" alt="GooglePlus Sitruc"/></a>
-                             <a href="http://www.youtube.com/sitruc"><img src="Images/youtube.png" alt="YouTube Sitruc"/></a>
-                         </div>
+        <div class="mobile-nav row hidden-md hidden-lg">
+            <div class="col-xs-6">
+                <button type="button" class="btn btn-menu" data-toggle="collapse" data-target="#main-menu">
+                    <span class="">Menu</span>
+                </button>
+            </div>
+            <div class="col-xs-6">
 
-                     </div>
-                 </div>
-                 <div class="wrappercenter">
+                <a class="mobile-login btn btn-login" href="#login/">Connexion</a>
 
-                  <div class="row">
-                     <nav id="menu">
-                         <div class="cl75">
-                            <ul>
-                                <li class="active"><a href="#accueil">Accueil</a></li>
-                                <li><a href="association.html">Actualités</a></li>
-                                <li><a href="activites.html">Se déplacer</a></li>
-                                <li><a href="agenda.html">S'abonner / Acheter</a></li>
-                                <li><a href="adhere.html">Qui sommes-nous ?</a></li>
-                                <li><a href="adhere.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="cl25">
-                            <div id="sb-search" class="sb-search">
-                                <form>
-                                   <input class="sb-search-input" placeholder="Entrez votre recherche..." type="search" value="" name="search" id="search">
-                                   <input class="sb-search-submit" type="submit" value="">
-                                   <span class="sb-icon-search"><img src="Images/loupe.png"/></span>
-                               </form>
-                           </div>
-                       </div>
-                   </nav>
-               </div>
-           </div>
-       </header>
-       
-       
-       
-       <!----------------------------------SLIDER---------------------------------->
-       <div class="row">
-          <div id="accueil">
-             <ul class="rslides" id="slider1">
-                 <li><img src="Images/cuisine.jpg" alt="">Activités culinaires</li>
-                 <li><img src="Images/sport.jpg" alt="">Activités sportives</li>
-                 <li><img src="Images/photographie.jpg" alt="">Initiation et perfectionnement à la photographie</li>
-                 <li><img src="Images/musique.jpg" alt="">Activités musicophiles</li>
-                 <li><img src="Images/oenologie.jpg" alt="">Oenologie</li>
-             </ul>
-         </div>
-     </div>
-     
-     
-     
-     <!----------------------------------AGENDA---------------------------------->
-     <div class="row">
-      <div class="agenda">
-         <p>Evènement 1 agenda</p>
-     </div>
- </div>
- 
- 
- 
- <!----------------------------------ITINERAIRES---------------------------------->
- <div class="row">
-  <div class="cl66 itineraire">
-     <h2 class="inline-border"><a href="itineraire.html">Mon itinéraire</a></h2>
-     <div class="row">
-         <div class="cl50 cl50iti">
-            <b>Départ</b><br>
+            </div>
+        </div>
+
+
+        <div id="main-menu" class="collapse navbar-collapse menu-header-container">
+            <div class="row">
+                <ul id="menu-header" class="nav navbar-nav">
+                    <li class="mobile-search hidden-md hidden-lg"><form id="menusearch" action="#" method="get"><input id="tops" name="s" class="s" placeholder="Rechercher" type="text"><input name="submit" class="btn submit text-hide" value="OK" type="submit"></form></li>
+                    <li class="menu-item-home"><a href="#">Accueil</a></li>
+                    <li><a href="#a-la-une/">Actualités</a>
+                        <ul>
+                            <li><a href="#a-la-une/">Toute l'actualité</a></li>
+                            <li><a href="#a-la-une/">Edito</a></li>
+                            <li><a href="#a-la-une/">Infos trafic</a></li>
+                            <li><a href="#a-la-une/">Agenda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#les-aides/">Se déplacer</a>
+                        <ul>
+                            <li><a href="#a-la-une/">Le réseau</a></li>
+                            <li><a href="#a-la-une/">Horaires</a></li>
+                            <li><a href="#a-la-une/">Transport scolaire</a></li>
+                            <li><a href="#a-la-une/">Transport professionnel</a></li>
+                            <li><a href="#a-la-une/">Transport sénior</a></li>
+                            <li><a href="#a-la-une/">Carte interactive</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#vie-pratique/">S'abonner / Acheter</a>
+                        <ul>
+                            <li><a href="#a-la-une/">Les tarifs</a></li>
+                            <li><a href="#a-la-une/">Les points de vente</a></li>
+                            <li><a href="#a-la-une/">Recharger sa carte</a></li>
+                            <li><a href="#a-la-une/">Demander sa carte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communaute2/">Qui sommes-nous ?</a>
+                        <ul>
+                            <li><a href="#a-la-une/">L'historique</a></li>
+                            <li><a href="#a-la-une/">L'équipe</a></li>
+                            <li><a href="#a-la-une/">Les véhicules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#espace-interactif/">Contact</a>
+                        <ul>
+                            <li><a href="#a-la-une/">Nous contacter</a></li>
+                            <li><a href="#a-la-une/">Devis personnalisé</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+<div id="main">
+    <div id="contenu">
+
+        <div class="row">
+            <div id="slider">
+                <ul class="bjqs">
+                    <li><img src="images/rock-en-marche.jpeg" /><h2>Festival Rock en marche 2014</h2></li>
+                    <li><img src="images/minibus.jpg" /><h2>Nouvel équipement minibus</h2></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="push-ecoute-entraide">
+            <div class="row">
+                <p class="col-md-12">
+                    <span class="tag">Agenda</span>
+                    <span class="text">Ligne exceptionnelle pour la fête de la saucisse 2014.</span>
+                    <a class="read-more" href="#entre-aidants-avec-nos-proches/"><span class="icn-plus"></span></a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Formulaire recherche itinéraire -->
+        <div class="row">
             <form method='post' action=''>
-                <INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/>
-                
-                <br>
-                <FORM>
-                    <SELECT name="depart" size="1">
-                        <OPTION>Départ
-                            <OPTION>Arrivée
-                            </SELECT>
-                        </FORM>
-                        
-                        <FORM>
-                            <SELECT name="heure" size="1">
-                                <OPTION>00</OPTION>
-                                <OPTION>01</OPTION>
-                                <OPTION>02</OPTION>
-                                <OPTION>03</OPTION>
-                                <OPTION>04</OPTION>
-                                <OPTION>05</OPTION>
-                                <OPTION>06</OPTION>
-                                <OPTION>07</OPTION>
-                                <OPTION>08</OPTION>
-                                <OPTION>09</OPTION>
-                                <OPTION>10</OPTION>
-                                <OPTION>11</OPTION>
-                                <OPTION>12</OPTION>
-                                <OPTION>13</OPTION>
-                                <OPTION>14</OPTION>
-                                <OPTION>15</OPTION>
-                                <OPTION>16</OPTION>
-                                <OPTION>17</OPTION>
-                                <OPTION>18</OPTION>
-                                <OPTION>19</OPTION>
-                                <OPTION>20</OPTION>
-                                <OPTION>21</OPTION>
-                                <OPTION>22</OPTION>
-                                <OPTION>23</OPTION>
-                            </SELECT>
-                        </FORM>
-                        
-                        <FORM>
-                            <SELECT name="minute" size="1">
-                                <OPTION>00</OPTION>
-                                <OPTION>05</OPTION>
-                                <OPTION>10</OPTION>
-                                <OPTION>15</OPTION>
-                                <OPTION>20</OPTION>
-                                <OPTION>25</OPTION>
-                                <OPTION>30</OPTION>
-                                <OPTION>35</OPTION>
-                                <OPTION>40</OPTION>
-                                <OPTION>45</OPTION>
-                                <OPTION>50</OPTION>
-                                <OPTION>55</OPTION>
-                            </SELECT>
-                        </FORM>
-                        
+                <div class="col-md-9">
+                    <h2 class="inline-border"><a href="itineraire.html">Mon itinéraire</a></h2>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="col-md-6 depart">
+                                <b>Départ</b><br>
+                                <INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/>
+                                <div id="depart-select">
+                                    <SELECT name="depart" size="1">
+                                        <OPTION>Départ</OPTION>
+                                        <OPTION>Arrivée</OPTION>
+                                    </SELECT>
+                                    <p>à</p>
+                                    <SELECT name="heure" size="1">
+                                        <OPTION>00</OPTION>
+                                        <OPTION>01</OPTION>
+                                        <OPTION>02</OPTION>
+                                        <OPTION>03</OPTION>
+                                        <OPTION>04</OPTION>
+                                        <OPTION>05</OPTION>
+                                        <OPTION>06</OPTION>
+                                        <OPTION>07</OPTION>
+                                        <OPTION>08</OPTION>
+                                        <OPTION>09</OPTION>
+                                        <OPTION>10</OPTION>
+                                        <OPTION>11</OPTION>
+                                        <OPTION>12</OPTION>
+                                        <OPTION>13</OPTION>
+                                        <OPTION>14</OPTION>
+                                        <OPTION>15</OPTION>
+                                        <OPTION>16</OPTION>
+                                        <OPTION>17</OPTION>
+                                        <OPTION>18</OPTION>
+                                        <OPTION>19</OPTION>
+                                        <OPTION>20</OPTION>
+                                        <OPTION>21</OPTION>
+                                        <OPTION>22</OPTION>
+                                        <OPTION>23</OPTION>
+                                    </SELECT>
+                                    <p>h</p>
+                                    <SELECT name="minute" size="1">
+                                        <OPTION>00</OPTION>
+                                        <OPTION>05</OPTION>
+                                        <OPTION>10</OPTION>
+                                        <OPTION>15</OPTION>
+                                        <OPTION>20</OPTION>
+                                        <OPTION>25</OPTION>
+                                        <OPTION>30</OPTION>
+                                        <OPTION>35</OPTION>
+                                        <OPTION>40</OPTION>
+                                        <OPTION>45</OPTION>
+                                        <OPTION>50</OPTION>
+                                        <OPTION>55</OPTION>
+                                    </SELECT>
+                                </div>
+                            </div>
+                            <div class="col-md-6 arrivee">
+                                <div class="col-md-2">
+                                    <img src="images/fleche-echange.png" alt="fleche echange"/>
+                                </div>
+                                <div class="col-md-10">
+                                    <b>Arrivée</b><br>
+                                    <INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/> 
+                                    <br>
+                                    <p id="champ-date"><b>Date</b><br><input type="text" id="datepicker"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rechercher col-md-2">
+                            <INPUT TYPE='submit' NAME='rechercher' VALUE=' Rechercher '/>
+                        </div>
                     </div>
-                    
-                    <div class="cl50">
-                        <b>Arrivée</b><br>
-                        <INPUT type= 'text' placeholder='Arrêt, adresse ou lieu' name='mail'/> 
-                        <INPUT TYPE='submit' NAME='rechercher' VALUE=' Rechercher '/>
-                        <br>
-                        
-                        <!-- Tableau obligatoire ! C'est lui qui contiendra le calendrier ! -->
-                        <table class="ds_box" cellpadding="0" cellspacing="0" id="ds_conclass" style="display: none;">
-                           <tr>
-                              <td id="ds_calclass"></td>
-                          </tr>
-                      </table>
-                      <input type="text" name="date1" onclick="ds_sh(this);" />
-                  </form>
-              </div>
-          </div>
-      </div>
-      
-      <div class="cl33 lignes tilt">
-         <div class="row">
-             <h2 class="inline-border"><a href="reseau.html">Réseau</a></h2>
-             <a href="#"><img src="Images/1.png" alt="Facebook Sitruc"/></a>
-             <a href="#"><img src="Images/2.png" alt="Twitter Sitruc"/></a>
-             <a href="#"><img src="Images/3.png" alt="GooglePlus Sitruc"/></a>
-             <a href="#"><img src="Images/4.png" alt="YouTube Sitruc"/></a>
-             <a href="#"><img src="Images/5.png" alt="YouTube Sitruc"/></a><br>
-         </div>
-         <a href="#"><img src="Images/plan.png" alt="GooglePlus Sitruc"/></a>
-         <a href="#"><img src="Images/interactif.png" alt="YouTube Sitruc"/></a>
-     </div>
- </div>
- 
- 
- 
- <!----------------------------------SERVICES---------------------------------->
- <section id="set2">
-  <h2 class="inline-border"><a href="itineraire.html">Les services</a></h2>
-  <div class="row">
-      <div class="cl33 servicesimage">
-         <p>Découvrez tous les services Sitruc en ligne.<br> Suivi du traffic et commande en ligne, gérez tout depuis ce panneau.</p>
-         <button class="btn btn-4 btn-4c icon-arrow-right">Tous les services</button>
-     </div>
-     
-     <div class="cl66">
-         <section>
-             <ul id="da-thumbs" class="da-thumbs">
-                <li>
-                    <a href="http://dribbble.com/shots/505046-Menu">
-                       <img src="images/horaire.png" />
-                       <div><span>Consultez les horaires</span></div>
-                   </a>
-               </li>
-               <li>
-                <a href="http://dribbble.com/shots/504336-TN-Aquarium">
-                   <img src="images/euro.png" />
-                   <div><span>Consultez les tarifs</span></div>
-               </a>
-           </li>
-           <li>
-            <a href="http://dribbble.com/shots/504197-Mr-Crabs">
-               <img src="images/boutique.png" />
-               <div><span>Boutique en ligne</span></div>
-           </a>
-       </li>
-       <li>
-        <a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
-           <img src="images/amende.png" />
-           <div><span>Paiment des amendes</span></div>
-       </a>
-   </li>
-   <li>	
-    <a href="http://dribbble.com/shots/503058-Ice-Cream-nom-nom">
-       <img src="images/alerte.png" />
-       <div><span>Alertes accessibilité</span></div>
-   </a>
-</li>
-<li>
-    <a href="http://dribbble.com/shots/502927-My-Muse">
-       <img src="images/contact.png" />
-       <div><span>Contactez-nous!</span></div>
-   </a>
-</li>	
-</ul>
-</section>
-</div>
-</div>
-</section>
+                </div>
+                <div class="col-md-3 lignes tilt">
+                    <div class="row">
+                        <h2 class="inline-border"><a href="reseau.html">Réseau</a></h2>
+                        <ul id="numeros-lignes">
+                            <li><a id="ligne1" href="#">1</a></li>
+                            <li><a id="ligne2" href="#">2</a></li>
+                            <li><a id="ligne3" href="#">3</a></li>
+                            <li><a id="ligne4" href="#">4</a></li>
+                            <li><a id="ligne5" href="#">5</a></li>
+                        </ul>
+                    </div>
+                    <a class="col-md-6 bt-plan-txt" href="#"><img src="Images/map.png" alt="Plan du réseau"/><br>Plan du réseau</a>
+                    <a class="col-md-6 bt-plan-txt" href="#"><img src="Images/map-int.png" alt="Plan interactif"/><br>Plan interactif</a>
+                </div>
+            </form>
+        </div>
 
 
 
-<!----------------------------------SE DEPLACER---------------------------------->
-<h2 class="inline-border"><a href="itineraire.html">Se déplacer</a></h2>
-<div class="row">
-  <div class="cl66">
-     <section>
-         <ul id="da-thumbs" class="da-thumbs">
-            <li>
-                <a href="http://dribbble.com/shots/505046-Menu">
-                   <img src="images/pro.png" />
-                   <div><span>Transports pour professionnels</span></div>
-               </a>
-           </li>
-           <li>
-            <a href="http://dribbble.com/shots/504336-TN-Aquarium">
-               <img src="images/senior.png" />
-               <div><span>Transports pour séniors</span></div>
-           </a>
-       </li>
-       <li>
-        <a href="http://dribbble.com/shots/504197-Mr-Crabs">
-           <img src="images/evenementiel.png" />
-           <div><span>Transports évènementiels</span></div>
-       </a>
-   </li>
-   <li>
-    <a href="http://dribbble.com/shots/503731-Gallery-of-Mo-2-Mo-logo">
-       <img src="images/scolaire.png" />
-       <div><span>Transports scolaire</span></div>
-   </a>
-</li>
-<li>
-    <button class="btn btn-4 btn-4c icon-arrow-right">Les transports Sitruc</button>
-</li>
-</ul>
-</section>
-</div>
+        <div class="aides block-content">
+            <div class="row block-title">
+                <div class="col-md-6 col-sm-6 wrapper-title">
+                    <h2><a href="#les-aides/">Services</a></h2>
+                </div>
+                <div class="col-md-6 col-sm-6 wrapper-read-more">
+                    <a href="#les-aides/">Voir tous les services<span class="icn-plus"></span></a>
+                </div>
+            </div>
+            <div class="row les-aides">
+                <div class="col-md-9 block-aides col-sm-12">
+                    <div class="icones-aides">
+                        <ul>
+                            <li id="horaire"><a href="#" ><div class="wrapper"><span class="icn-finances"></span><img src="images/horaire.png"/></div>Horaires</a></li><!--
+                            --><li id="amendes"><a href="#" ><div class="wrapper"><span class="icn-mobilite"></span><img src="images/amende.png"/></div>Paiement des amendes</a></li><!--
+                            --><li id="tarifs"><a href="#" ><div class="wrapper"><span class="icn-materiel"></span><img src="images/tarif.png"/></div>Tarifs</a></li><!--
+                            --><li id="accessibilite"><a href="#" ><div class="wrapper"><span class="icn-domicile"></span><img src="images/alerte.png"/></div>Alertes accessibilité</a></li><!--
+                            --><li id="boutique"><a href="#" ><div class="wrapper"><span class="icn-domicile"></span><img src="images/boutique.png"/></div>Boutique en ligne</a></li><!--
+                            --><li id="contact"><a href="#" ><div class="wrapper"><span class="icn-domicile"></span><img src="images/contact.png"/></div>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 block-questions col-sm-4">
+                    <div id="carousel-quotes" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ul id="horaire-texte">
+                                <li><a href="#">Quelle est la prochaine heure de passage pour mon bus ?</a></li>
+                                <li><a href="#">Afficher la fiche horaire d'une ligne donnée</a></li>
+                                <li><a href="#">Premiers et derniers départs</a></li>
+                            </ul>
+                            <ul id="amendes-texte">
+                                <li><a href="#">amendes texte</a></li>
+                            </ul>
+                            <ul id="tarifs-texte">
+                                <li><a href="#">tarifs texte</a></li>
+                            </ul>
+                            <ul id="accessibilite-texte">
+                                <li><a href="#">accessibilite texte</a></li>
+                            </ul>
+                            <ul id="boutique-texte">
+                                <li><a href="#">boutique texte</a></li>
+                            </ul>
+                            <ul id="contact-texte">
+                                <li><a href="#">contact texte</a></li>
+                            </ul>
+                            <script type="text/javascript">
+                                function affiche(lienImg){
+                                    document.getElementById('refImg').src = lienImg;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="cl33 servicesimage">
- <p>Découvrez tous les services Sitruc en ligne.<br> Suivi du traffic et commande en ligne, gérez tout depuis ce panneau.</p>
-</div>
-</div>
 
+        <div class="vie-pratique block-content">
+            <div class="row block-title">
+                <div class="col-md-6 wrapper-title">
+                    <h2><a href="#">Se déplacer</a></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#documentation/" class="block-push document">
+                        <p class="push-title">Transport scolaire</p>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#annuaire-et-contacts-utiles/" class="block-push annuaire">
+                        <p class="push-title">Transport professionnel</p>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#quotidien/etre-aidant-et-travailler/" class="block-push etre-aidant">
+                        <p class="push-title">Transport sénior</p>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#glossaire/" class="block-push glossaire">
+                        <p class="push-title">Evènementiel</p>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <div class="engagement block-content">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="title">Nos engagements</h4>
+                        <p class="chapo">Souci constant de la préservation de l'environnement.<br>
+                        Des véhicules accessibles pour les personnes à mobilité réduite.<br>
+                        Assurer un service de qualité.</p>
+                        <a href="#programme-aidantsaides/genese-de-notre-engagement/" class="read-more">Sitruc, avec ou sans suc<span class="icn-plus"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!----------------------------------NOS ENGAGEMENTS---------------------------------->
-<div class="row">
-  <section id="set2">
-     <h2 class="inline-border"><a href="itineraire.html">Nos engagements</a></h2>
-     
-     
-     engagements
- </section>
-</div>
+    </div><!-- <div id="contenu"> -->
 
+</div><!-- <div id="main"> -->
 
+<div id="footer">
 
-<!----------------------------------FOOTER---------------------------------->
-<footer>
-  <div class="row">
-    <div class="cl25">
-     <h5><a href="actualites.html">Actualités</a></h5>
-     <ul>
-         <li><a href="#" target="_blank">Toute l'actualité</a></li><br>
-         <li><a href="#" target="_blank">Edito</a></li><br>
-         <li><a href="#" target="_blank">Infos traffic</a></li><br>
-     </ul>
- </div>
- 
- <div class="cl25">
-     <h5><a href="se-deplacer.html">Se déplacer</a></h5>
-     <ul>
-         <li><a href="#" target="_blank">Lignes</a></li><br>
-         <li><a href="#" target="_blank">Horaires</a></li><br>
-         <li><a href="#" target="_blank">Le réseau</a></li><br>
-         <li><a href="#" target="_blank">Plan interactif</a></li><br>
-         <li><a href="#" target="_blank">Transport scolaire</a></li><br>
-         <li><a href="#" target="_blank">Transport pro</a></li><br>
-         <li><a href="#" target="_blank">Transport sénrios</a></li><br>
-         <li><a href="#" target="_blank">Transport évènementiel</a></li><br>
-     </ul>
- </div>
- 
- <div class="cl25">
-  <h5><a href="abonner-acheter.html">S'abonner / Acheter</a></h5> 
-  <ul>
-     <li><a href="#" target="_blank">Tarifs</a></li><br>
-     <li><a href="#" target="_blank">Recharger ma carte</a></li><br>
-     <li><a href="#" target="_blank">Demander ma carte</a></li><br>
-     <li><a href="#" target="_blank">Points de vente</a></li><br>
- </ul>
-</div>
+    <div class="main-footer hidden-xs">
+        <div class="row">
+            <ul class="col">
+                <li class="main-cat"><a href="#a-la-une/">Actualités</a></li>
+                <li><a href="#actualites/">Toute l'actualité</a></li>
+                <li><a href="#conseils/">Edito</a></li>
+                <li><a href="#dossiers/">Infos trafic</a></li>
+                <li><a href="#dependances/">Agenda</a></li>
+            </ul>
+            <ul class="col">
+                <li class="main-cat"><a href="#les-aides/">Se déplacer</a></li>
+                <li><a href="#category/toutes-aides/aides-financieres/"><div class="wrapper"><span class="icn-finances"></span></div>Le réseau</a></li><!--
+                --><li><a href="#category/toutes-aides/aide-a-la-mobilite/"><div class="wrapper"><span class="icn-mobilite"></span></div>Horaires</a></li><!--
+                --><li><a href="#category/toutes-aides/aides-techniques/"><div class="wrapper"><span class="icn-materiel"></span></div>Transport scolaire</a></li><!--
+                --><li><a href="#category/toutes-aides/aides-a-domicile/"><div class="wrapper"><span class="icn-domicile"></span></div>Transport professionnel</a></li><!--
+                --><li><a href="#category/toutes-aides/aides-a-domicile/"><div class="wrapper"><span class="icn-domicile"></span></div>Transport sénior</a></li><!--
+            --><li><a href="#category/toutes-aides/aides-a-domicile/"><div class="wrapper"><span class="icn-domicile"></span></div>Carte interactive</a></li>
+        </ul>
+        <ul class="col">
+            <li class="main-cat"><a href="#vie-pratique/">S'abonner / Acheter</a></li>
+            <li><a href="#agenda/">Les tarifs</a></li>
+            <li><a href="#annuaire-et-contacts-utiles/">Les points de vente</a></li>
+            <li><a href="#documentation/">Recharger sa carte</a></li>
+            <li><a href="#quotidien/etre-aidant-et-travailler/">Demander sa carte</a></li>
+        </ul>
+        <ul class="col">
+            <li class="main-cat"><a href="#communaute2/">Qui sommes-nous ?</a></li>
+            <li><a href="#les-questions-aux-professionnels/">L'historique</a></li>
+            <li><a href="#communaute/">L'équipe</a></li>
+            <li><a href="#entre-aidants-avec-nos-proches/">Les véhicules</a></li>
+        </ul>
+        <ul class="col">
+            <li class="main-cat"><a href="#espace-interactif/">Contact</a></li>
+            <li><a href="#formations/">Nous contacter</a></li>
+            <li><a href="#medias/">Devis personnalisé</a></li>
+        </ul>
+    </div>
 
-<div class="cl25">
- <h5><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></h5> 
- <ul>
-     <li><a href="#" target="_blank">Historique</a></li><br>
-     <li><a href="#" target="_blank">L'équipe</a></li><br>
-     <li><a href="#" target="_blank">Parc véhicules</a></li><br>
- </ul>
-</div>
-</div>
-
-<div class="row footer2">
- <div class="cl25">
-   <h5><a href="contact.html">Contact</a></h5>
-   <ul>
-       <li><a href="#" target="_blank">L'équipe</a></li><br>
-       <li><a href="#" target="_blank">Parc véhicules</a></li><br>
-   </ul>
-</div>
-<div class="cl33 clfooter">
- <div class="newsletter">
-    <b>S'inscrire à la newsletter du site</b>
-    <form method='post' action=''>
-        
-        Email
-        <INPUT type= 'text' placeholder='Votre email' name='mail'/>                        
-        <INPUT TYPE='submit' NAME='envoyer' VALUE=' Inscription '/>
-    </form>
-</div>
-
-<div class="footsocial tilt">
-    <a href="http://www.facebook.fr/sitruc"><img src="Images/facebook.png" alt="Facebook Sitruc"/></a>
-    <a href="http://www.twitter.com/sitruc"><img src="Images/twitter.png" alt="Twitter Sitruc"/></a>
-    <a href="http://www.googleplus.com/sitruc"><img src="Images/googleplus.png" alt="GooglePlus Sitruc"/></a>
-    <a href="http://www.youtube.com/sitruc"><img src="Images/youtube.png" alt="YouTube Sitruc"/></a>
-    <a href="http://www.youtube.com/sitruc"><img src="Images/linkedin.png" alt="LinkedIn Sitruc"/></a>
-    <a href="http://www.youtube.com/sitruc"><img src="Images/viadeo.png" alt="Viadeo Sitruc"/></a>
-    
-</div>
-</div>
-</div>
-<div class="row footerlast">
-  <div class="cl33 logofooter">
-     <a href="http://www.sitruc.fr"><img src="Images/logo_sitruc.png" alt="Logo Sitruc"/></a>
-     
-     <div class="meteo">
-        météo	
-        
+    <div class="row">
+            <div class="weather-wrapper col-md-3">
+            <img src="" class="weather-icon" alt="Weather Icon" />
+            <div>
+               <!-- <span class="weather-place"></span></p> -->
+               <span>Gothan City</span><br>
+               <span class="weather-temperature"></span><br>
+               (<span class="weather-min-temperature"></span> - <span class="weather-max-temperature"></span>)
+           </div>
+       </div>
+        <ul class="col-md-3 col-sm-3 social-footer col-md-offset-3">
+            <li class="newsletter">
+                <p>S'inscrire à la newsletter</p>
+                <form>
+                    <input type="text" placeholder="Adresse e-mail...">
+                </form>
+                <input type="button" class="btn btn-newsletter" value="OK">
+                <a href="#" target="_blank"><img src="images/facebook.jpg" style="padding-top:10px;"/></a>
+                <a href="#" target="_blank"><img src="images/twitter.jpg" style="padding-top:10px;"/></a>
+                <a href="#" target="_blank"><img src="images/googleplus.jpg" style="padding-top:10px;"/></a>
+                <a href="#" target="_blank"><img src="images/linkedin.jpg" style="padding-top:10px;"/></a>
+                <a href="#" target="_blank"><img src="images/viadeo.jpg" style="padding-top:10px;"/></a>
+            </li>
+        </ul>
     </div>
 </div>
 
-<div class="cl66">
- <a href="/plan-du-site/">Plan du site</a> | <a href="/mentions-legales/">Mentions Légales</a> | <a href="/cus">Conditions d'utilisation du site</a> | <a href="/cgv/">Conditions générales de vente</a> | <a href="newsletter.html">Désinscription newsletter</a> | <a href="contact.html">Contact</a>
+<!--[if lt IE 7]><hr /><![endif]-->
+
+<div class="row sub-footer hidden-xs">
+    <div class="col-md-2 col-sm-12">
+        <a class="text-hide" href="#" title="Retourner sur la page d'accueil"><img id="img-footer" src="images/logo-sitruc.png" alt="Sitruc" /></a>
+   </div>
+   <div class="col-md-10 col-sm-12 sub-infos">
+    <ul class="links top">
+        <li><a href="#plan-du-site/">Plan du site</a></li>
+        <li><a href="#contacts-utiles/">Mentions légales</a></li>
+        <li><a href="#conditions-dutilisation-du-site-internet/">Conditions d'utilisation du site</a></li>
+        <li><a href="http://www.macif.fr/" target="_blank">CGV</a></li>
+        <li><a href="#contact/">Contact</a></li>
+        <li class="colorz"><a href="http://weeble.fr/" target="_blank">Site by <span>Weeble</span></a></li>
+    </ul>
 </div>
 </div>
 
-<div class="row">
-  <div class="cl100 copyright">
-     <br>Copyright © 2014 - Sitruc
- </div>
+<div class="row mobile-footer hidden-sm hidden-md hidden-lg">
+    <div class="col-md-12">
+        <div class="newsletter">
+            <p>M'inscrire à la newsletter</p>
+            <a href="http://f1.mailperf.com/V5/form.aspx?GV1=ASP103Z00000000000000000000011LK" target="_blank" class="btn btn-newsletter">Je m'abonne</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="youtube">
+            <p>Nous retrouver sur :</p>
+            <a href="https://www.youtube.com/user/AidantsAides" target="_blank"><span class="icn-youtube"></span></a>
+        </div>
+    </div>
 </div>
-</footer>
+
 </div>
 
-<script src="js/info-trafic.js"></script>
+<script type="text/javascript">
+	<!--
+	xtnv = document;        //parent.document or top.document or document
+	xtsd = "http://logi7";
+	xtsite = "279570";
+	xtn2 = "";        // level 2 site
+	xtpage = "";        //page name (with the use of :: to create chapters)
+	xtdi = "";        //implication degree
+	//
+</script>
+<script type="text/javascript" src="js/xtcore.js"></script>
+<noscript>
+    <img width="1" height="1" src="http://logi7.xiti.com/hit.xiti?s=279570&amp;s2=&amp;p=&amp;di=&amp;" alt="" />
+</noscript>
 
 
-	    <!---------------------Menu flottant / fixe--------------------->
-	    <script type="text/javascript">
-	    var positionElementInPage = $('#menu').offset().top; //prend le menu
-	    $(window).scroll( // listen for scroll
-	                     function() { //gestion du menu avec le scroll :
-	                        if ($(window).scrollTop() >= positionElementInPage) {
-	                                // fixed
-	                                $('#menu').addClass("floatable");
-	                            } else {
-	                                // relative
-	                                $('#menu').removeClass("floatable");
-	                            }
-	                     }
-	                    );
-	                            
-	    </script>
-	    
-	    <!---------------------Barre de recherche--------------------->
-	    <script src="js/classie.js"></script>
-	    <script src="js/uisearch.js"></script>
-	    <script>
-		new UISearch( document.getElementById( 'sb-search' ) );
-	    </script>
-	    
-	    <!---------------------Suivi hover--------------------->
-	    <script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
-	    <script type="text/javascript">
-	    $(function() {
-		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-	    });
-	    </script>
-			
-	    <!---------------------Effet image--------------------->
-	    <script src="js/toucheffects.js"></script>
-	    
-	    <!---------------------Effet bouton--------------------->
-	    <script>
-	    var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
-	    buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
-	    totalButtons7Click = buttons7Click.length,
-	    totalButtons9Click = buttons9Click.length;
+<!--<script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0014/7253.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>-->
 
-	    buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
-	    buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+    <!-- Bandeau info trafic -->
+    <script src="js/info-trafic.js"></script>
 
-	    function activate() {
-		var self = this, activatedClass = 'btn-activated';
-	    
-		if( classie.has( this, 'btn-7h' ) ) {
-		    // if it is the first of the two btn-7h then activatedClass = 'btn-error';
-		    // if it is the second then activatedClass = 'btn-success'
-		    activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
-		}
-		else if( classie.has( this, 'btn-8g' ) ) {
-		    // if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
-		    // if it is the second then activatedClass = 'btn-error3d'
-		    activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
-		}
-	    
-		if( !classie.has( this, activatedClass ) ) {
-		    classie.add( this, activatedClass );
-		    setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
-		}
-	    }
+    <!-- Slider -->
+    <script src="js/bjqs.min.js"></script>
+    <script>
+       jQuery(document).ready(function($) {
+           $('#slider').bjqs({
+               'height' : 320,
+               'width' : 970,
+               'responsive' : true
+           });
+       });
+   </script>
+   <script type="text/javascript" language="javascript" >
 
-	    document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
-		classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
-	    },
-	    false );
-	    </script>
+       $(document).ready(function(){
+		//MANDATORY: Hide the intended div upon page load or it will be visible throughout
+		$('#horaire-texte').hide();
+		$('#amendes-texte').hide();
+		$('#tarifs-texte').hide();
+		$('#accessibilite-texte').hide();
+		$('#boutique-texte').hide();
+		$('#contact-texte').hide();
+	});
 
-	    
-	    
-    
-</body>
-</html>
+       $('#horaire').hover( function() {
+          $('#horaire-texte').show();
+          $('#amendes-texte').hide();
+          $('#tarifs-texte').hide();
+          $('#accessibilite-texte').hide();
+          $('#boutique-texte').hide();
+          $('#contact-texte').hide();
+      });
+
+       $('#amendes').hover( function() {
+          $('#horaire-texte').hide();
+          $('#amendes-texte').show();
+          $('#tarifs-texte').hide();
+          $('#accessibilite-texte').hide();
+          $('#boutique-texte').hide();
+          $('#contact-texte').hide();
+      });
+
+       $('#tarifs').hover( function() {
+          $('#horaire-texte').hide();
+          $('#amendes-texte').hide();
+          $('#tarifs-texte').show();
+          $('#accessibilite-texte').hide();
+          $('#boutique-texte').hide();
+          $('#contact-texte').hide();
+      });
+
+       $('#accessibilite').hover( function() {
+          $('#horaire-texte').hide();
+          $('#amendes-texte').hide();
+          $('#tarifs-texte').hide();
+          $('#accessibilite-texte').show();
+          $('#boutique-texte').hide();
+          $('#contact-texte').hide();
+      });
+
+       $('#boutique').hover( function() {
+          $('#horaire-texte').hide();
+          $('#amendes-texte').hide();
+          $('#tarifs-texte').hide();
+          $('#accessibilite-texte').hide();
+          $('#boutique-texte').show();
+          $('#contact-texte').hide();
+      });
+
+       $('#contact').hover( function() {
+          $('#horaire-texte').hide();
+          $('#amendes-texte').hide();
+          $('#tarifs-texte').hide();
+          $('#accessibilite-texte').hide();
+          $('#boutique-texte').hide();
+          $('#contact-texte').show();
+      });
+
+   </script>
+
+   <script src="js/openWeather.js"></script>
+
+   <script>
+
+       $(function() {
+
+          $('.weather-temperature').openWeather({
+             city: 'Guéret, FR',
+             minTemperatureTarget: '.weather-min-temperature',
+             maxTemperatureTarget: '.weather-max-temperature',
+             iconTarget: '.weather-icon',
+             customIcons: 'images/weather/',
+             success: function() {
+
+				//show weather
+				$('.weather-wrapper').show();
+				
+			},
+			error: function(message) {
+				console.log(message);
+			}
+		});
+
+      });
+
+   </script>
+
+</body></html>
+<!-- KMKB 17-11-2010 -->
+<!-- JKB 9-10-2014 -->
+<!-- Dynamic page generated in 0.729 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-10-17 17:09:11 -->
+<!-- super cache -->
